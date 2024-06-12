@@ -1,0 +1,17 @@
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #121212 ;
+    color: #ededed;
+}
+
+.navbar > ul{
+    display: flex;
+}
+
+.navbar > ul > li{
+    margin-right: 30px;
+    font-size: 20px;
+}
