@@ -3,15 +3,41 @@ header{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color: #121212 ;
-    color: #ededed;
+    background-color: #0D0D0D;
+    color: #F2EBD5;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    height: 100px;
+    position: fixed;
+    width: 100%;
 }
 
+.titulo{
+    font-size: 35px;
+}
 .navbar > ul{
     display: flex;
 }
 
-.navbar > ul > li{
+.navbar > ul > a >  li{
     margin-right: 30px;
     font-size: 20px;
+    color: #F2EBD5 ;
+}
+
+.iconos {
+    font-size: 35px;
+    margin-right: 20px;
+    color: #F2EBD5;
+}
+
+a .iconos:hover, a .categorias:hover{
+    color: #C2F2ED;
+    transform: scale(1.05);
+    transition: 0.1s ease-in ;
+}
+
+a, a:visited{
+    text-decoration: none;
 }
