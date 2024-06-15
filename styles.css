@@ -1,5 +1,11 @@
+:root{
+    --primary-color: #0d0d0d;
+    --secondary-color: #ff7e5f; 
+}
+
+
 body{
-    background-color: #0D0D0D;
+    background-color: var(--primary-color);
     font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-feature-settings: normal;
     font-variation-settings: normal;
@@ -9,7 +15,7 @@ header{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color: #0D0D0D;
+    background-color: var(--primary-color);
     color: white;
     height: 80px;
     position: fixed;
@@ -38,7 +44,7 @@ header{
 }
 
 a .iconos:hover, a .categorias:hover{
-    color: #C2F2ED;
+    color: var(--secondary-color);
     transform: scale(1.05);
     transition: 0.1s ease-in ;
 }
@@ -59,9 +65,7 @@ a, a:visited{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /*font-family: "Anton", sans-serif;
-    font-weight: 400;
-    font-style: normal;*/
+    align-items: center;
     color: white;
 }
 
@@ -71,5 +75,37 @@ a, a:visited{
 }
 
 .nombre{
-    color: #C2F2ED;
+    background: linear-gradient(to bottom, #ff7e5f, #feb47b);
+    -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     font-weight: 700;
+}
+
+#subtitulo{
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.button{
+    position: relative;
+    border: none;
+    transition: .4s ease-in;
+    z-index: 1;
+    width: 200px;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.button::before, button::after{
+    position: absolute;
+    content: "";
+    z-index: -1;
+}
+
+button:hover{
+    box-shadow: inset -10.5em 0 0 0 var(--secondary-color), 
+    inset 10.5em 0 0 0 var(--secondary-color);
 }
