@@ -9,6 +9,7 @@ body{
     font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-feature-settings: normal;
     font-variation-settings: normal;
+    color: white;
 }
 header{
     display: flex;
@@ -53,9 +54,12 @@ a, a:visited{
     text-decoration: none;
 }
 
+.primero{
+    height: 100vh;
+}
+
 .principal{
     padding-top: 105px;
-    
 }
 
 .presentacion{
@@ -66,7 +70,6 @@ a, a:visited{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
     min-height: 600px;
 }
 
@@ -124,5 +127,59 @@ button:hover{
 }
 
 .tec:hover{
-    width: 100px;
+    transform: scale(1.4);
+}
+
+.seccion{
+    width: 100%;
+    font-size: 70px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+}
+
+.projects{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 5px;
+    width:810;
+    align-items: center;
+    justify-items: center;
+    border: #feb47b solid;
+}
+
+.proyecto{
+    width: 400px;
+    height: 200px;
+    border: #ff7e5f solid;
+}
+
+@media screen and (max-width: 950px)
+{
+    .titulo{
+        font-size: 20px;
+    }
+    .navbar{
+        display: none;
+    }
+    .presentacion{
+        font-size: 80px;
+    }
+
+    .skills{
+        margin-top: 60px;
+    }
+}
+
+@media screen and (max-width: 420px)
+{
+    .presentacion{
+        font-size: 60px;
+    }
+
+    .skills{
+        margin-top: 0px;
+    }
+
 }
