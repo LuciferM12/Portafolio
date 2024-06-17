@@ -22,6 +22,7 @@ header{
     position: fixed;
     width: 100%;
     border-bottom: #F2EBD5 0.5px solid;
+    z-index: 1;
 }
 
 .titulo{
@@ -155,7 +156,7 @@ button:hover{
     width: 45%;
     border: var(--secondary-color) solid;
     border-radius: 10px;
-    min-width: 600px;
+    min-width: 300px;
     font-size: .5em;
     color: white;
     font-weight: 700;
@@ -182,6 +183,7 @@ button:hover{
     width: 100%;
     margin-top: 5px;
     gap: 50px;
+    flex-wrap: wrap;
 }
 
 .tec-t{
@@ -205,6 +207,21 @@ button:hover{
 
 
 /*Responsividad */
+@media screen and (max-width: 1700px)
+{
+    .primero{
+        height: auto;
+    }
+
+    .projects{
+        width: 100%;
+    }
+    .proyecto{
+        min-width: none;
+        width: 90%;
+    }
+}
+
 @media screen and (max-width: 950px)
 {
     .titulo{
@@ -221,9 +238,8 @@ button:hover{
         margin-top: 60px;
     }
 
-    .primero{
-        height: auto;
-    }
+
+    
 }
 
 @media screen and (max-width: 420px)
@@ -236,4 +252,11 @@ button:hover{
         margin-top: 0px;
     }
 
+    .proyecto{
+        width: 80%;
+    }
+
+    .tec-us{
+        gap: 10px;
+    }
 }
