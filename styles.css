@@ -205,6 +205,40 @@ button:hover{
     width: 30px;
 }
 
+.informacion{
+    padding: 30px;
+    width: 80%;
+    font-size: .4em;
+    line-height: 1.3;
+    font-weight: 400;
+}
+
+.escuelas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.esc{
+    width: 300px;
+    margin-top: 30px;
+    border-radius: 10px;
+    min-width: 300px ;
+    box-shadow:-9px 13px 18px -4px rgba(0,0,0,0.66); ;
+
+}
+
+.certificaciones{
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
 
 /*Responsividad */
 @media screen and (max-width: 1700px)
