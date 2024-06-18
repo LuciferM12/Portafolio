@@ -314,4 +314,8 @@ a.links{
     .tec-us{
         gap: 10px;
     }
+
+    .seccion{
+        font-size: 50px;
+    }
 }
