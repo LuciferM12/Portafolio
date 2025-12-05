@@ -1,1 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
 @import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+    --color-dark: #1b1a25;
+    --color-light: #faf8ff;
+    --color-primary: #8486f0;
+    --color-secondary: #2f2d48;
+
+    --font-family-sans: 'Raleway', sans-serif;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-family-sans);
+    color: black;
+    background-color: var(--color-light);
+    scroll-behavior: smooth;
+  }
+
+  html.dark {
+    background-color: var(--color-dark);
+    color: white;
+  }
+}
