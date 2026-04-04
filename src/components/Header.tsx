@@ -35,10 +35,10 @@ const Header = () => {
   const isDark = theme === "dark";
 
   return (
-    <div className="dark:bg-dark bg-light w-screen h-20 box-border text-dark dark:text-light p-4 pb-0 flex items-center justify-center">
-      <div className="w-full max-w-[1920px] h-full flex items-center justify-between border-2 border-gray-700">
+    <div className=" w-screen h-20 box-border text-dark dark:text-light p-4 pb-0 flex items-center justify-center">
+      <div className="w-full max-w-[1920px] h-full flex bg-white dark:bg-secondary items-center justify-between rounded-xl">
         <div className="flex gap-6 font-semibold items-center ml-4">
-          <div className="font-bold text-2xl ml-4">LuciferM12</div>
+          <div className="font-bold text-2xl ml-4">Omar Rdz</div>
           <div className="flex-1">Projects</div>
           <div className="flex-1">Certifications</div>
         </div>
@@ -51,7 +51,7 @@ const Header = () => {
           </a>
           <button
             onClick={toggleTheme}
-            className="relative w-16 h-8 rounded-full bg-dark/90 dark:bg-secondary/50 transition-colors duration-300 focus:outline-none"
+            className="relative w-16 h-8 rounded-full dark:bg-dark bg-black transition-colors duration-300 focus:outline-none"
             aria-label="Toggle theme"
           >
             <motion.div
