@@ -36,7 +36,7 @@ const Header = () => {
 
   return (
     <div className=" w-screen h-20 box-border text-dark dark:text-light p-4 pb-0 flex items-center justify-center">
-      <div className="w-full max-w-[1920px] h-full flex bg-white dark:bg-secondary items-center justify-between rounded-xl">
+      <div className="w-full max-w-[1920px] h-full flex bg-light dark:bg-secondary items-center justify-between rounded-xl">
         <div className="flex gap-6 font-semibold items-center ml-4">
           <div className="font-bold text-2xl ml-4">Omar Rdz</div>
           <div className="flex-1">Projects</div>
