@@ -152,8 +152,9 @@ const Experience = () => {
 
   return (
     <div
+      id="experience"
       ref={sectionRef}
-      className="w-full min-h-screen box-border flex items-center justify-center text-dark dark:text-light px-4"
+      className="w-full min-h-screen box-border flex items-center justify-center text-dark dark:text-light px-4 max-sm:pt-10"
     >
       <div className="w-full flex flex-col gap-8">
         <motion.div

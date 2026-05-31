@@ -100,7 +100,7 @@ const cardVariants: Variants = {
 
 const Certifications = () => {
   return (
-    <div className="w-full min-h-screen box-border text-dark dark:text-light flex items-center justify-center">
+    <div id="certifications" className="w-full min-h-screen box-border text-dark dark:text-light flex items-center justify-center">
       <div className="w-full p-4 flex flex-col items-start rounded-xl justify-center gap-8">
         <motion.div
           className="flex items-center gap-2"

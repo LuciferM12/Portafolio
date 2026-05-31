@@ -44,7 +44,7 @@ const Presentation = () => {
   };
 
   return (
-    <div className="w-full min-h-screen overflow-x-hidden box-border text-dark dark:text-light p-4 flex items-center justify-center">
+    <div className="w-full min-h-screen overflow-x-hidden box-border text-dark dark:text-light p-4 flex items-center justify-center max-sm:pt-25">
       <div className="dark:bg-secondary bg-light max-lg:w-full w-1/2 p-16 max-lg:p-4 min-h-30 flex flex-col items-center rounded-xl justify-center shadow-lg gap-4 relative overflow-hidden">
         <SpeckledBackground />
         <h1 className="text-5xl font-bold text-center z-10 flex flex-wrap justify-center">

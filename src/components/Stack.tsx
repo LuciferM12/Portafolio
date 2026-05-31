@@ -129,7 +129,7 @@ const categories: StackCategory[] = [
 
 const Stack = () => {
   return (
-    <div className="w-full min-h-screen box-border text-gray-800 dark:text-gray-200 flex items-center justify-center">
+    <div id="stack" className="w-full min-h-screen box-border text-gray-800 dark:text-gray-200 flex items-center justify-center max-sm:pt-10">
       <div className="p-4 min-h-30 flex flex-col items-start rounded-xl justify-center gap-8">
         <div className="flex items-center justify-center gap-2">
           <Layers className="w-6 h-6 text-primary inline-block" />
@@ -140,7 +140,7 @@ const Stack = () => {
             {categories.map((category) => (
               <div
                 key={category.label}
-                className="grid grid-cols-2 w-full items-start"
+                className="grid grid-cols-2 max-sm:grid-cols-1 max-sm:gap-4 w-full items-start"
               >
                 <motion.h3
                   className="font-extrabold text-4xl"
