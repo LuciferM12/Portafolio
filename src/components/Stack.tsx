@@ -129,7 +129,7 @@ const categories: StackCategory[] = [
 
 const Stack = () => {
   return (
-    <div className="w-full min-h-20 h-screen box-border text-gray-800 dark:text-gray-200 flex items-center justify-center">
+    <div className="w-full min-h-screen box-border text-gray-800 dark:text-gray-200 flex items-center justify-center">
       <div className="p-4 min-h-30 flex flex-col items-start rounded-xl justify-center gap-8">
         <div className="flex items-center justify-center gap-2">
           <Layers className="w-6 h-6 text-primary inline-block" />
