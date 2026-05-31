@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Moon, Sun } from "lucide-react";
 import { motion } from "framer-motion";
+import { Github, FileDown } from "lucide-react";
 
 const Header = () => {
   const [theme, setTheme] = useState("light");
@@ -44,10 +45,20 @@ const Header = () => {
         </div>
         <div className="mr-4 flex items-center font-semibold gap-4">
           <a
-            href="#projects"
+            href="https://github.com/luciferm12"
+            target="_blank"
+            rel="noopener noreferrer"
             className="mx-4 hover:text-primary transition-colors"
           >
-            Contact
+            <Github className="w-6 h-6" />
+          </a>
+          <a
+            href="/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mx-4 hover:text-primary transition-colors"
+          >
+            <FileDown className="w-6 h-6" />
           </a>
           <button
             onClick={toggleTheme}
