@@ -35,7 +35,7 @@ const Header = () => {
   const isDark = theme === "dark";
 
   return (
-    <div className="w-full h-20 text-dark dark:text-light p-4 pb-0 flex items-center justify-center">
+    <div className="w-full h-20 text-dark dark:text-light p-4 pb-0 flex items-center justify-center fixed top-0 left-0 z-50 backdrop-blur-md">
       <div className="w-full h-full flex bg-light dark:bg-secondary items-center justify-between rounded-xl">
         <div className="flex gap-6 font-semibold items-center ml-4">
           <h1 className="font-bold text-2xl ml-4">Omar Rdz</h1>
