@@ -1,22 +1,75 @@
 ---
 import "../styles/global.css";
+
+const siteUrl = "https://www.luciferm12.dev";
+const title = "Omar Rodriguez | Full Stack Engineer";
+const description =
+  "Portfolio of Omar Rodriguez (LuciferM12), an Information Technology Engineer specialized in frontend development with React, Next.js, TypeScript and more.";
+const image = `${siteUrl}/og-image.png`;
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
     <meta name="generator" content={Astro.generator} />
-    <title>Omar Rodriguez</title>
+
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="author" content="Martin Omar Rojas Rodriguez (LuciferM12)" />
+    <meta
+      name="keywords"
+      content="Omar Rodriguez, frontend engineer, React, Next.js, TypeScript, portfolio, web developer, LuciferM12, UPSLP, Martin Omar Rojas Rodriguez, software engineer, web development, programming, technology"
+    />
+    <link rel="canonical" href={siteUrl} />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={siteUrl} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={image} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="en_US" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content={siteUrl} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={image} />
+
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Person",
+        name: "Martin Omar Rojas Rodriguez (LuciferM12)",
+        url: siteUrl,
+        jobTitle: "Frontend Engineer",
+        description: description,
+        knowsAbout: [
+          "React",
+          "Next.js",
+          "TypeScript",
+          "Node.js",
+          "TailwindCSS",
+        ],
+        sameAs: [
+          "https://github.com/LuciferM12",
+          "https://linkedin.com/in/omarrdz",
+        ],
+      })}
+    />
+
     <script is:inline>
       const theme =
         localStorage.getItem("theme") ||
         (window.matchMedia("(prefers-color-scheme: dark)").matches
           ? "dark"
           : "light");
-
       if (theme === "dark") {
         document.documentElement.classList.add("dark");
       } else {
