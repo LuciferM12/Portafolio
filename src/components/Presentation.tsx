@@ -78,10 +78,18 @@ const Presentation = () => {
           solutions using modern tools and frameworks.
         </p>
         <div className="flex gap-4 items-center z-10">
-          <button className="px-8 py-2 dark:bg-dark bg-black text-light rounded-lg dark:hover:bg-dark/90 transition-colors hover:cursor-pointer">
+          <button
+            className="px-8 py-2 dark:bg-dark bg-black text-light rounded-lg dark:hover:bg-dark/90 transition-colors hover:cursor-pointer"
+            onClick={() => window.open("/resume.pdf", "_blank")}
+          >
             Download CV
           </button>
-          <button className="px-8 py-2 border dark:border-dark border-black bg-white dark:bg-secondary dark:text-light rounded-lg dark:hover:bg-secondary/90 transition-colors hover:cursor-pointer ">
+          <button
+            className="px-8 py-2 border dark:border-dark border-black bg-white dark:bg-secondary dark:text-light rounded-lg dark:hover:bg-secondary/90 transition-colors hover:cursor-pointer"
+            onClick={() =>
+              window.open("mailto:rojasrodriguezmartinomar@gmail.com", "_blank")
+            }
+          >
             Contact Me
           </button>
         </div>
